@@ -1,0 +1,12 @@
+{
+    "0": {
+        "name": "example1",
+        "title": "embed title",
+        "description": "this message will appear as an embed when the example1 is said"
+    },
+    "1": {
+        "name": "example2",
+        "title": "embed title",
+        "description": "this message will appear as an embed when the example2 is said"
+    }
+}

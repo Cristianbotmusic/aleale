@@ -1,0 +1,8 @@
+{
+    "token" : "TOKEN",
+    "prefix" : "!",
+    "owners": [ "322384730869989387" ],
+
+    "activityType": "LISTENING",
+    "activity": "!help"
+}
