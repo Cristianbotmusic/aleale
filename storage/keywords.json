@@ -1,12 +1,67 @@
 {
     "0": {
-        "name": "example1",
-        "title": "embed title",
-        "description": "this message will appear as an embed when the example1 is said"
+        "name": "give role",
+        "title": "Missing the client user role?",
+        "description": "Link your discord to your account on [pyroclient.com/dashboard](https://pyroclient.com/dashboard) to recive the client user role."
     },
     "1": {
-        "name": "example2",
-        "title": "embed title",
-        "description": "this message will appear as an embed when the example2 is said"
+        "name": "get role",
+        "title": "Missing the client user role?",
+        "description": "Link your discord to your account on [pyroclient.com/dashboard](https://pyroclient.com/dashboard) to recive the client user role."
+    },
+    "2": {
+        "name": "add role",
+        "title": "Missing the client user role?",
+        "description": "Link your discord to your account on [pyroclient.com/dashboard](https://pyroclient.com/dashboard) to recive the client user role."
+    },
+    "3": {
+        "name": "set role",
+        "title": "Missing the client user role?",
+        "description": "Link your discord to your account on [pyroclient.com/dashboard](https://pyroclient.com/dashboard) to recive the client user role."
+    },
+    "4": {
+        "name": "give me role",
+        "title": "Missing the client user role?",
+        "description": "Link your discord to your account on [pyroclient.com/dashboard](https://pyroclient.com/dashboard) to recive the client user role."
+    },
+    "5": {
+        "name": "user role",
+        "title": "Missing the client user role?",
+        "description": "Link your discord to your account on [pyroclient.com/dashboard](https://pyroclient.com/dashboard) to recive the client user role."
+    },
+    "6": {
+        "name": "client crash",
+        "title": "Crash Reporting",
+        "description": "Has your game crashed? Please report the crash to the develpers with a ping in #support so they can fix it."
+    },
+    "7": {
+        "name": "pyro crash",
+        "title": "Crash Reporting",
+        "description": "Has your game crashed? Please report the crash to the develpers with a ping in #support so they can fix it."
+    },
+    "8": {
+        "name": "it crash",
+        "title": "Crash Reporting",
+        "description": "Has your game crashed? Please report the crash to the develpers with a ping in #support so they can fix it."
+    },
+    "9": {
+        "name": "buy client",
+        "title": "Purchase Help",
+        "description": "Pyro client costs $20 and can be bought with either Paypal or Bitcoin. Register here to buy: [pyroclient.com/register](https://pyroclient.com/register)"
+    },
+    "10": {
+        "name": "purchase client",
+        "title": "Purchase Help",
+        "description": "Pyro client costs $20 and can be bought with either Paypal or Bitcoin. Register here to buy: [pyroclient.com/register](https://pyroclient.com/register)"
+    },
+    "11": {
+        "name": "get client",
+        "title": "Purchase Help",
+        "description": "Pyro client costs $20 and can be bought with either Paypal or Bitcoin. Register here to buy: [pyroclient.com/register](https://pyroclient.com/register)"
+    },
+    "12": {
+        "name": "pay for the client",
+        "title": "Purchase Help",
+        "description": "Pyro client costs $20 and can be bought with either Paypal or Bitcoin. Register here to buy: [pyroclient.com/register](https://pyroclient.com/register)"
     }
 }

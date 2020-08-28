@@ -7,6 +7,8 @@ const cooldowns = new Discord.Collection();
 module.exports = async (client, message) => {
   if (message.author.bot) return;
 
+  let args = [];
+
   if(message.guild) {
     let conf = JSON.parse(fs.readFileSync("./storage/config.json", "utf8"));
 
@@ -24,12 +26,7 @@ module.exports = async (client, message) => {
   
       for (let i = 0; i < objSize(keywords); i++) {
         if (message.content.toLowerCase().includes(keywords[String(i)].name)) {
-          const kwembed = new Discord.MessageEmbed()
-            .setTitle(keywords[String(i)].title)
-            .setDescription(keywords[String(i)].description)
-            .setColor("#e86418");
-  
-          message.channel.send(kwembed);
+          timedEmbed(keywords[String(i)].title, keywords[String(i)].description, "#e86418")
         }
       }
     }
@@ -44,13 +41,20 @@ module.exports = async (client, message) => {
         timedEmbed(message, "**Deleted message**", "❌ Invite links are disabled on this server.", "#e86418")
       }
     }
+
+    if (conf[message.guild.id].prefix) {
+      if (!message.content.startsWith(conf[message.guild.id].prefix)) return;
+      args = message.content.slice(conf[message.guild.id].prefix.length).trim().split(/ +/g);
+    } else {
+      if (!message.content.startsWith(client.config.prefix)) return;
+      args = message.content.slice(client.config.prefix.length).trim().split(/ +/g);
+    }
+  } else {
+    if (!message.content.startsWith(client.config.prefix)) return;
+    args = message.content.slice(client.config.prefix.length).trim().split(/ +/g);
   }
 
-
-  const args = message.content.slice(client.config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-
-  if (!message.content.startsWith(client.config.prefix)) return;
 
   if (message.client.commands.has(command)) cmd = message.client.commands.get(command);
   else if (message.client.aliases.has(command)) cmd = message.client.aliases.get(command);

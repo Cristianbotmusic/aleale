@@ -31,7 +31,7 @@ module.exports = {
                         color: "#e86418",
                         timestamp: new Date(),
                         footer: {
-                            text: "Bot made by Lorem ipsum#2364"
+                            text: "Bot made by Lorem ipsum#2364, Use [prefix]help <command> for information about a specific command"
                         }
                     }),
                     reactions: {
@@ -47,7 +47,7 @@ module.exports = {
                         color: "#e86418",
                         timestamp: new Date(),
                         footer: {
-                            text: "Bot made by Lorem ipsum#2364"
+                            text: "Bot made by Lorem ipsum#2364, Use [prefix]help <command> for information about a specific command"
                         }
                     }),
                     reactions: {
@@ -59,7 +59,7 @@ module.exports = {
 
             message.reply("Sent you a dm.");
 
-            console.clear(); //I do this cuz there is an error from the menu module that makes no sense and the only purpose it serves is to annoy me (like really, the command works i see no reason for that error to appear)
+            console.clear(); //I do this cou there is an error from the menu module that makes no sense and the only purpose it serves is to annoy me (like really, the command works i see no reason for that error to appear)
         }
 
 
@@ -193,7 +193,7 @@ module.exports = {
 
         message.reply("Sent you a dm.");
 
-        console.clear(); //I do this cuz there is an error from the menu module that makes no sense and the only purpose it serves is to annoy me (like really, the command works i see no reason for that error to appear)
+        console.clear(); //I do this cou there is an error from the menu module that makes no sense and the only purpose it serves is to annoy me (like really, the command works i see no reason for that error to appear)
     }
 }
 
