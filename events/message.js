@@ -26,7 +26,7 @@ module.exports = async (client, message) => {
   
       for (let i = 0; i < objSize(keywords); i++) {
         if (message.content.toLowerCase().includes(keywords[String(i)].name)) {
-          timedEmbed(keywords[String(i)].title, keywords[String(i)].description, "#e86418")
+          timedEmbed(message, keywords[String(i)].title, keywords[String(i)].description, "#e86418")
         }
       }
     }
